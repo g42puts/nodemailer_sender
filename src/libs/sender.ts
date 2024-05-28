@@ -10,7 +10,7 @@ class EmailTransporter {
     this.transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT),
-      secure: Boolean(process.env.SMTP_SECURE),
+      secure: process.env.SMTP_SECURE === 'true',
       auth: {
         user: process.env.SENDER_EMAIL,
         pass: process.env.SENDER_PASS,
