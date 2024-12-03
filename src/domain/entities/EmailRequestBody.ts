@@ -1,11 +1,11 @@
 interface EmailRequestBody {
-  nome: string;
-  sobrenome: string;
-  telefone: string;
-  cidade: string;
-  bairro: string;
-  valorDaConta: string;
-  mensagem: string;
+  name: string;
+  lastName: string;
+  telephone: string;
+  city: string;
+  neighborhood: string;
+  accountValue: string;
+  message: string;
 }
 
 export { EmailRequestBody };
